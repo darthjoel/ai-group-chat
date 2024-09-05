@@ -1,6 +1,7 @@
 import os
 import autogen
 import logging
+from datetime import datetime
 
 logging.getLogger("autogen.oai.client").setLevel(logging.ERROR)
 
@@ -9,8 +10,9 @@ logging.getLogger("autogen.oai.client").setLevel(logging.ERROR)
 
 llm_config = {"model": "gpt-4-turbo", "api_key": os.environ["OPENAI_API_KEY"]}
 
-task = "Write a blogpost about the stock price performance of "\
-"Nvidia in the past month. Today's date is 2024-09-04."
+current_date = datetime.now().strftime("%Y-%m-%d")
+
+task = f"Write a blogpost about the stock price performance of Nvidia in the past month. Today's date is {current_date}."
 
 # ## Build a group chat
 # 

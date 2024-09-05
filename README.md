@@ -44,8 +44,8 @@ You can use this structure for various collaborative AI tasks, such as:
 
 1. Clone the repository:
    
-       git clone https://github.com/your-repository/autogen-groupchat-example.git
-       cd autogen-groupchat-example
+       git clone https://github.com/darthjoel/ai-group-chat.git
+       cd ai-group-chat
 
 2. Install the dependencies:
    
